@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trayambak - Developer Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(1, 1, 42);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+
+
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(19, 19, 55);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(10, 10, 232);
+      font-size: 1.09rem;
+    }
+    
+    main hr {
+      border: 0;
+      background: #373791;
+      height: 1.2px;
+      display: flex;
+      align-items: center;
+      margin: 64px 80px;
+    }
+
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      margin: 80px 0;
+      align-items: center;
+    	width: 100%;
+    }
+
+    .firstsection>div {
+      width: 30%;
+    }
+
+    .leftsection {
+      font-size: 2.7rem;
+    }
+
+    .leftsection .buttons {
+      padding: 50px 0;
+    }
+
+    .leftsection .btn {
+      padding: 12px;
+      background: #17174b;
+      color: white;
+      border: 2px solid white;
+      border-radius: 8px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .rightsection img {
+      width: 80%;
+      margin: 10px;
+    }
+
+    .purple {
+      color: rgb(183, 117, 245);
+    }
+
+    #element {
+      color: rgb(183, 117, 245);
+    }
+
+   
+.form-container {
+    background-color:#050c34;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    max-width: 400px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #b775f5;
+    border-radius: 4px;
+    font-size: 16px;
+    width: calc(100% - 22px);
+}
+
+button {
+    background-color:#b775f5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+} 
+
+    footer {
+      background-color: rgb(5, 12, 52);
+    }
+
+    .footer {
+      display: flex;
+      padding: 23px 122px;
+      justify-content: space-evenly;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer>div {
+      width: 223px;
+    }
+
+    footer .footer-rights {
+      text-align: center;
+      color: gray;
+      padding: 12px 0;
+    }
+    
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Trayambak's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        Hi, My name is
+        <div><span class="purple">Trayambak</span></div>
+        <div>and I am a</div>
+        <span id="element"></span>
+        <div class="buttons">
+          <button class="btn">Download Resume</button>
+          <button class="btn" onclick="location.href='https://github.com/TrayambakKDewangan'">Visit Github</button>
+        </div>
+      </div>
+      <div class="rightsection">
+        <img src="myphoto2.png" alt="Trayambak's Photo">
+      </div>
+    </section>
+    <hr>
+   
+    <div class="form-container">
+      <h2>Contact Me</h2>
+      <form action="submit_form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Trayambak's Developer Portfolio</h3>
+      </div>
+      <div class="footer-second">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Projects</li>
+        </ul>
+      </div>
+     
+    </div>
+    <div class="footer-rights">
+      Copyright &#169; trayambaksportfolio.com | All rights reserved
+    </div>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Youtuber', 'Graphic Designer','Web Developer' ],
+      typeSpeed: 70, loop:true
+
+    });
+  </script>
+</body>
+
+</html>
